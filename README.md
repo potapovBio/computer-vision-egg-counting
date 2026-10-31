@@ -1,3 +1,4 @@
+[README.md](https://github.com/user-attachments/files/34227517/README.md)
 <div align="center">
 
 # Computer Vision · Egg Counting
@@ -9,7 +10,7 @@
 
 **Python · Ultralytics YOLOv8 · OpenCV · CVAT · Telegram**
 
-[Публикация](#публикация) · [Результаты](#результаты) · [Запуск](#быстрый-запуск) · [Методика](docs/methodology.md) · [English](README.en.md)
+[Публикация](#публикация) · [Результаты](#результаты) · [Запуск](#быстрый-запуск) · [Методика](manduca-egg-counter/docs/methodology.md) · [English](manduca-egg-counter/README.en.md)
 
 </div>
 
@@ -25,13 +26,13 @@
 
 **Потапов Г. А.** Применение алгоритмов компьютерного зрения для автоматизации подсчёта яиц чешуекрылых на примере табачного бражника (Manduca sexta).
 
-[Тезисы в РИНЦ / eLIBRARY.RU](https://elibrary.ru/item.asp?id=89172412&pff=1) · [Читать тезисы в PDF](docs/publications/potapov-manduca-egg-counting.pdf)
+[Тезисы в РИНЦ / eLIBRARY.RU](https://elibrary.ru/item.asp?id=89172412&pff=1) · [Читать тезисы в PDF](manduca-egg-counter/docs/publications/potapov-manduca-egg-counting.pdf)
 
 ## Пример работы
 
 | Исходная фотография | Сегментация YOLOv8m-seg |
 |:--:|:--:|
-| ![Фотография яиц](examples/input.jpg) | ![Предсказание модели](docs/assets/prediction.jpg) |
+| ![Фотография яиц](manduca-egg-counter/examples/input.jpg) | ![Предсказание модели](manduca-egg-counter/docs/assets/prediction.jpg) |
 
 Модель обнаружила **28 яиц из 28 размеченных** при `conf=0.4`. Для иллюстрации выбран удачный пример из валидационной выборки; общие метрики приведены отдельно ниже.
 
@@ -58,20 +59,20 @@ flowchart LR
 | mAP@0.50 | **0,97940** | **0,94344** |
 | mAP@0.50:0.95 | 0,83412 | 0,48711 |
 
-Источник: [полный журнал обучения](reports/train/results.csv). mAP характеризует качество обнаружения/сегментации и **не является процентом верно подсчитанных яиц**. MAE и другие метрики ошибки подсчёта на независимом тесте пока не рассчитаны.
+Источник: [полный журнал обучения](manduca-egg-counter/reports/train/results.csv). mAP характеризует качество обнаружения/сегментации и **не является процентом верно подсчитанных яиц**. MAE и другие метрики ошибки подсчёта на независимом тесте пока не рассчитаны.
 
 <details>
-<summary>Кривые обучения и предсказания из сохранённого эксперимента</summary>
+<summary>Кривые обучения</summary>
 
-![Динамика потерь и метрик](docs/assets/results.png)
+![Динамика потерь и метрик](manduca-egg-counter/docs/assets/results.png)
 
 | Детекция: precision–recall | Сегментация: precision–recall |
 |:--:|:--:|
-| ![Box PR](docs/assets/BoxPR_curve.png) | ![Mask PR](docs/assets/MaskPR_curve.png) |
+| ![Box PR](manduca-egg-counter/docs/assets/BoxPR_curve.png) | ![Mask PR](manduca-egg-counter/docs/assets/MaskPR_curve.png) |
 
 </details>
 
-**Параметры обучения:** YOLOv8m-seg, 100 эпох, размер изображения 640, batch 8, patience 200. Лучшее значение mAP50 детекции в журнале достигнуто на эпохе 74. Подробности эксперимента — в [методике](docs/methodology.md).
+**Параметры обучения:** YOLOv8m-seg, 100 эпох, размер изображения 640, batch 8, patience 200. Лучшее значение mAP50 детекции в журнале достигнуто на эпохе 74. Подробности эксперимента — в [методике](manduca-egg-counter/docs/methodology.md).
 
 ## Данные
 
@@ -157,6 +158,6 @@ computer-vision-egg-counting/
 
 ## Использованные инструменты и авторство
 
-Модель: [Ultralytics YOLOv8](https://docs.ultralytics.com/models/yolov8/). Разметка: CVAT. Конвертация COCO: сторонний проект **Koldim2001/COCO_to_YOLOv8**; его исходники и копия CVAT в этот репозиторий не перенесены. Подробности: [происхождение материалов](docs/provenance.md).
+Модель: [Ultralytics YOLOv8](https://docs.ultralytics.com/models/yolov8/). Разметка: CVAT. Конвертация COCO: сторонний проект **Koldim2001/COCO_to_YOLOv8**; его исходники и копия CVAT в этот репозиторий не перенесены. Подробности: [происхождение материалов](manduca-egg-counter/docs/provenance.md).
 
 Сохранённые журналы и иллюстрации относятся к исходной работе. Скрипты запуска и документация подготовлены при оформлении проекта. Лицензия на авторский код, данные и веса пока не выбрана; лицензия стороннего конвертера не переносится автоматически на этот проект.
