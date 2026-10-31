@@ -1,10 +1,12 @@
 {
   "python": "3.13.2",
   "ultralytics": "8.3.95",
-  "sample_count": 43,
+  "sample_count": 28,
   "zero_objects": "passed",
   "missing_weights": "passed",
   "source_overwrite_protection": "passed",
   "telegram_live": "not run",
-  "training": "not rerun"
+  "training": "not rerun",
+  "sample_ground_truth_count": 28,
+  "sample_source": "__00315__IMG_1473.JPG"
 }

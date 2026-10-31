@@ -1,0 +1,12 @@
+{
+  "source_split": "validation",
+  "source_filename": "__00315__IMG_1473.JPG",
+  "confidence": 0.4,
+  "image_size": 640,
+  "max_det": 1000,
+  "annotated_count": 28,
+  "predicted_count": 28,
+  "matched_boxes_iou50": 28,
+  "selection": "Illustrative example selected by box matching and count agreement among 37 validation images with 15-130 labeled objects. Not an independent test or a new dataset-level evaluation.",
+  "mean_matched_box_iou": 0.964724106409368
+}
