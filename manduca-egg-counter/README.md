@@ -69,8 +69,6 @@ flowchart LR
 |:--:|:--:|
 | ![Box PR](docs/assets/BoxPR_curve.png) | ![Mask PR](docs/assets/MaskPR_curve.png) |
 
-![Предсказания на валидационной выборке из сохранённого запуска](docs/assets/val_batch0_pred.jpg)
-
 </details>
 
 **Параметры обучения:** YOLOv8m-seg, 100 эпох, размер изображения 640, batch 8, patience 200. Лучшее значение mAP50 детекции в журнале достигнуто на эпохе 74. Подробности эксперимента — в [методике](docs/methodology.md).
