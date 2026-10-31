@@ -1,0 +1,5 @@
+# With no `path`, Ultralytics resolves these against this YAML's folder.
+train: ../data/train/images
+val: ../data/validation/images
+names:
+  0: egg

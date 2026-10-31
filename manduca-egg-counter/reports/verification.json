@@ -1,0 +1,10 @@
+{
+  "python": "3.13.2",
+  "ultralytics": "8.3.95",
+  "sample_count": 43,
+  "zero_objects": "passed",
+  "missing_weights": "passed",
+  "source_overwrite_protection": "passed",
+  "telegram_live": "not run",
+  "training": "not rerun"
+}

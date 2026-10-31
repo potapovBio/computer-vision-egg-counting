@@ -1,0 +1,26 @@
+{
+  "train": {
+    "images": 172,
+    "label_files": 172,
+    "objects": 11670,
+    "missing_labels": 0
+  },
+  "validation": {
+    "images": 64,
+    "label_files": 64,
+    "objects": 3561,
+    "missing_labels": 0
+  },
+  "coco_export": {
+    "instances_Train.json": {
+      "images": 186,
+      "annotations": 11334
+    },
+    "instances_Validation.json": {
+      "images": 50,
+      "annotations": 3897
+    }
+  },
+  "exact_duplicate_image_hashes_across_splits": 0,
+  "example_original_filename": "__00012__IMG_1497.JPG"
+}

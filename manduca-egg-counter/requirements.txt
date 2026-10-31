@@ -1,0 +1,3 @@
+# Historical Ultralytics version found in the local research environment.
+ultralytics==8.3.95
+python-telegram-bot>=21,<23

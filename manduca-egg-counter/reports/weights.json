@@ -1,0 +1,6 @@
+{
+  "local_source": "YOLO_datasetTG/weights/best.pt",
+  "bytes": 54823637,
+  "sha256": "f631f4e5ee3ec5cd5d7c11378863ff15584a0fbe6041761e58e74aeee02e4056",
+  "note": "Checkpoint selection criterion not verified; epoch 74 metrics refer to results.csv, not an independently evaluated copy of this checkpoint."
+}
