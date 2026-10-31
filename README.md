@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/34227517/README.md)
 <div align="center">
 
 # Computer Vision · Egg Counting
