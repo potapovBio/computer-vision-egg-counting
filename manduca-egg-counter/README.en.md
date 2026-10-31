@@ -2,17 +2,29 @@
 
 **YOLOv8m-seg for counting tobacco hornworm (*Manduca sexta*) eggs in laboratory photographs.**
 
-[Русская версия](README.md) · [Methodology](docs/methodology.md) · [Recorded metrics](reports/train/results.csv)
+[Русская версия](README.md) · [Publication](#publication) · [Methodology](docs/methodology.md) · [Recorded metrics](reports/train/results.csv)
 
 **G. A. Potapov · ITMO University · All-Russian Institute of Plant Protection.**
 
 The workflow combines polygon annotation in CVAT, COCO-to-YOLO conversion, instance segmentation and a Telegram interface. The repository packages the research artifacts with portable inference and training entry points.
+
+## Publication
+
+**Potapov, G. A.** Application of computer vision algorithms to automate lepidopteran egg counting: a case study of the tobacco hornworm (*Manduca sexta*). Conference abstract in Russian; title translated here for reference.
+
+[Russian Science Citation Index / eLIBRARY.RU](https://elibrary.ru/item.asp?id=89172412&pff=1) · [Read the abstract (PDF, Russian)](docs/publications/potapov-manduca-egg-counting.pdf)
 
 | Input | Segmentation output |
 |:--:|:--:|
 | ![Input](examples/input.jpg) | ![Prediction](docs/assets/prediction.jpg) |
 
 The model detected **28 of 28 annotated eggs** at confidence 0.4. This is a selected successful validation example; aggregate metrics are reported separately below.
+
+## Validation annotations
+
+![Ground-truth egg annotations in the validation batch](docs/assets/val_batch0_labels.jpg)
+
+Validation images with ground-truth annotations for the `egg` class.
 
 ## Recorded results
 
